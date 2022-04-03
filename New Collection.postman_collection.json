@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "9e975b67-fe33-4408-85fc-6ddc5f5ff56e",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Freelancer",
+			"item": [
+				{
+					"name": "Get All freelancer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/freelancers"
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Freelancer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/freelancers/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Register One Freelancer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"amirul+1@test.com\",\n  \"password\": \"test123\",\n  \"username\": \"amirul\",\n  \"phone_number\": \"+60123456789\",\n  \"skillsets\": \"Drawing, cooking\",\n  \"hobby\": \"Sleeping\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/freelancers/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Freelancer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"amirul@test.com\",\n  \"password\": \"test123\",\n  \"username\": \"atieqah\",\n  \"phone_number\": \"+60123456789\",\n  \"skillsets\": \"talking, cooking\",\n  \"hobby\": \"Sleeping\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Freelancer",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}

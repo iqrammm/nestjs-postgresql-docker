@@ -1,0 +1,37 @@
+### Register freelancer
+POST http://localhost:3000/freelancers/register
+content-type: application/json
+
+{
+  "email": "amirul+1@test.com",
+  "password": "test123",
+  "username": "amirul",
+  "phone_number": "+60123456789",
+  "skillsets": "Drawing, cooking",
+  "hobby": "Sleeping"
+}
+
+### find one freelancer
+GET http://localhost:3000/freelancers/1
+content-type: application/json
+
+### Find all freelancer
+GET http://localhost:3000/freelancers
+content-type: application/json
+
+### delete one freelancer
+DELETE http://localhost:3000/freelancers/3
+content-type: application/json
+
+### update one freelancer
+PATCH http://localhost:3000/freelancers/4
+content-type: application/json
+
+{
+  "email": "amirul@test.com",
+  "password": "test123",
+  "username": "atieqah",
+  "phone_number": "+60123456789",
+  "skillsets": "talking, cooking",
+  "hobby": "Sleeping"
+}
